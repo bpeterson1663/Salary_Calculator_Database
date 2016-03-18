@@ -65,18 +65,18 @@ function hideEmp(){
   console.log("Salary removed: ",removeSalary);
   $(this).closest('.employeeRow').addClass('fade');//grabs the closest class of employeeRow and removes that row
   $(this).closest('.buttonColumn').append('<button class="activateEmployee" data-salary="' + removeSalary + '">Activate</button>');
-
   $(this).remove();
   totalMonthlyCost -= (removeSalary/12);//subtracts removes Salary from totalMontlyCost
   $('#monthlysalarycost').text(totalMonthlyCost); //sets HTML text when employee is deleted
 
 
 }
-
+//function to activae Employee
 function activateEmp(){
   var addSalary = $(this).data('salary');
   $(this).closest('.employeeRow').removeClass('fade');
   $(this).closest('.buttonColumn').append('<button class="deactivateEmployee" data-salary="' + addSalary + '">Deactivate</button>');
+
   console.log("Salary Added: ",addSalary);
   $(this).remove();
 
