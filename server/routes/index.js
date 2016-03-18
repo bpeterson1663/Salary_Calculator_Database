@@ -9,7 +9,7 @@ var connectionString;
 //check first if Heroku database exists if not connect to localhost
 if(process.env.DATABASE_URL) {
   pg.defaults.ssl = true;
-  connectionString = process.env.DATABASE-URL;
+  connectionString = process.env.DATABASE_URL;
 } else{
   connectionString = 'postgress://localhost:5432/employee';
 }
