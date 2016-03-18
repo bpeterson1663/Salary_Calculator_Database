@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weekend One Full Stack</title>
+    <link rel="stylesheet" href="/assets/scripts/style.css"/>
+    <script type="text/javascript" src="/vendors/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+  </head>
+  <body>
+      <h1>Weekend One Challenge Full Stack Upgrade!</h1>
+
+      <h2>Monthly Salary Calculator</h2>
+      <!--Form info to collect employee info-->
+      <form id="employeeInfo">
+        <label>First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name"/>
+
+        <label>Last Name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" /><br/>
+
+        <label>Employee Number:</label>
+        <input type="number" id="employeenumber" name="employeenumber" placeholder="Employee Number" />
+
+        <label>Job Title:</label>
+        <input type="text" id="jobtitle" name="jobtitle" placeholder="Job Title" /><br/>
+
+        <label>Yearly Salary:</label>
+        <input type="number" id="yearlysalary" name="yearlysalary" placeholder="Yearly Salary" /><br/>
+
+        <input id="submitButton" type="submit" value="Submit Information"/>
+      </form>
+
+      <table id="employeeData">
+        <thead>
+          <tr>
+            <th>Last Name</th><th>First Name</th><th>Employee Number</th><th>Job Title</th><th>Yearly Salary</th><th>Delete Employee</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan ="6">
+              Total Monthly Salary Cost: $<b><span id="monthlysalarycost"></span></b>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+  </body>
+</html>
