@@ -1,5 +1,8 @@
-# salary_calculator_database
-Back to the Future!
+# Salary Calculator Database
+
+https://vast-sierra-69309.herokuapp.com/
+
+Prime Digital Academy Assignment
 Remember our first weekend challenge? It's time to re-visit some old code and bring it up to date with everything you know. This will be an excellent practice run for your next assessment covering Node/Express, AJAX, and SQL.
 
 Full Stack App
